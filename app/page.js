@@ -1,17 +1,16 @@
 import React from 'react'
-import Image from 'next/image'
-import kiss from '/public/kiss.jpg'
+import CalendarCounter from './CalendarCounter.js';
 
 function MainPage() {
   return (
     <div className='flex-col'>
       <div className='flex-col flex-1 text-center'>
           <main className='flex justify-center bg-blue-100 flex-1'>
-            <Image className="mx-4 p-2 rounded-3xl border-t-0 border-4 border-solid border-stone-950" alt="Couple kissing" width="360"  src={kiss} />
+          <CalendarCounter/>
           </main>
-          <section className=''>section</section>
+          <section className='bg-red-100'>section</section>
       </div>
-      <footer>footer</footer>
+      <footer className='bg-green-100'>footer</footer>
     </div>
   )
 }

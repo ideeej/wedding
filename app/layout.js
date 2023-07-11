@@ -1,7 +1,7 @@
 import './globals.css'
 import React from 'react'
 import Link from 'next/link'
-import { Home as HomeIcon, Gift, PartyPopper } from 'lucide-react'
+import { Gift, PartyPopper } from 'lucide-react'
 
 
 export const metadata = {
@@ -16,21 +16,21 @@ export default function RootLayout({ children }) {
       <div className="flex justify-center">
         
         <nav className='bg-stone-950 text-blue-50 flex justify-center space-x-6 py-6 flex-1'>
-          <span className='text-xl font-bold font-serif'>D&J</span>
-          <Link href="/" className="flex items-center gap-2 text-sm font-semibold">
-            <HomeIcon />
-            Home
-          </Link>
           <Link href="/festa" className="flex items-center gap-2 text-sm font-semibold">
             <PartyPopper />
-            A festa</Link>
+            A festa
+          </Link>
+          <Link href="/" className='text-xl font-bold font-serif'>
+            D&J
+          </Link>
           <Link href="/presentes" className="flex items-center gap-2 text-sm font-semibold">
             <Gift />
             Presentes
           </Link>
         </nav>
       </div>
-        {children}</body>
+        {children}
+      </body>
     </html>
   )
 }
