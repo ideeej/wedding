@@ -2,7 +2,9 @@ import './globals.css'
 import React from 'react'
 import Link from 'next/link'
 import { Gift, PartyPopper } from 'lucide-react'
+import { Cabin } from 'next/font/google'
 
+const cabin = Cabin({subsets: ['latin']})
 
 export const metadata = {
   title: 'Duda & Jedi',
@@ -11,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className={cabin.className}>
       <body className='bg-blue-50 text-stone-900'>
       <div className="flex justify-center">
         
